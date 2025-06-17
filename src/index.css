@@ -1,0 +1,16 @@
+html, body, #root {
+  width: 100vw;
+  height: 100vh;
+}
+
+#root {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.caja-de-ritmos {
+  width: 70rem;
+  height: 28rem;
+  background-color: #000;
+}

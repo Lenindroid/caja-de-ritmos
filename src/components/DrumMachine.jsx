@@ -4,7 +4,7 @@ import SideElements from './SideElements'
 
 function DrumMachine() {
   return (
-    <div>
+    <div className="caja-de-ritmos">
       <InstrumentsGrid />
       <SideElements />
     </div>
