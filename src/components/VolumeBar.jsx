@@ -2,7 +2,7 @@ import React from 'react'
 
 function VolumeBar() {
   return (
-    <progress></progress>
+    <input type="range" />
   )
 }
 
