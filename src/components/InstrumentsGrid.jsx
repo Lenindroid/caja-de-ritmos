@@ -3,7 +3,7 @@ import Instrument from './Instrument'
 
 function InstrumentsGrid() {
   return (
-    <div>
+    <div className="pad-grid">
       <Instrument />
       <Instrument />
       <Instrument />

@@ -2,7 +2,7 @@ import React from 'react'
 
 function Instrument() {
   return (
-    <button></button>
+    <button className="pad"></button>
   )
 }
 
