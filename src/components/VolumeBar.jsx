@@ -2,7 +2,7 @@ import React from 'react'
 
 function VolumeBar() {
   return (
-    <input type="range" />
+    <input type="range" orient="vertical"/>
   )
 }
 

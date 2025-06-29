@@ -46,3 +46,31 @@ html, body, #root {
 .pad:active {
   background-color: #0037EC;
 }
+
+.controlers {
+  height: 100%;
+  width: 40%;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.fish-button {
+  background-color: transparent;
+  border: none;
+  color: #0037EC;
+  font-size: 150px;
+  width: 250px;
+  height: 250px;
+  padding: 0;
+}
+
+.fish-button:hover {
+  color: #2758f9;
+}
+
+.fish-button:active {
+  color:#00A1EC;
+}
