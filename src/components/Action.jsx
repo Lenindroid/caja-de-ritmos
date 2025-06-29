@@ -2,9 +2,7 @@ import React from 'react'
 
 function Action() {
   return (
-    <span>
-      Sonido random
-    </span>
+    <span id="display"/>
   )
 }
 
