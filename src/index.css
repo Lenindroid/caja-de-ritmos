@@ -61,16 +61,23 @@ html, body, #root {
   background-color: transparent;
   border: none;
   color: #0037EC;
-  font-size: 150px;
-  width: 250px;
-  height: 250px;
+  font-size: 120px;
+  width: 150px;
+  height: 150px;
   padding: 0;
 }
 
-.fish-button:hover {
-  color: #2758f9;
+input[type="range"] {
+  height: 30%;
 }
 
-.fish-button:active {
-  color:#00A1EC;
+input[type="range"]::-webkit-slider-runnable-track, input[type="range"]::-moz-range-track {
+  height: 90%;
+  background: #00A1EC;
+}
+
+span {
+  border: 1px solid #fff;
+  padding: 10px;
+  margin: 5px;
 }
