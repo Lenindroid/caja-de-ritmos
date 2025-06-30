@@ -1,8 +1,8 @@
 import React from 'react'
 
-function Action() {
+function Action({instrument}) {
   return (
-    <span id="display"/>
+    <span id="display">{instrument}</span>
   )
 }
 

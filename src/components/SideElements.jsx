@@ -3,13 +3,13 @@ import FishButton from './FishButton'
 import VolumeBar from './VolumeBar'
 import Action from './Action'
 
-function SideElements() {
+function SideElements({ instrument }) {
   return (
     <div className="controlers">
       <h1>SHARK DJ</h1>
       <FishButton />
       <VolumeBar />
-      <Action />
+      <Action instrument={instrument}/>
     </div>
   )
 }

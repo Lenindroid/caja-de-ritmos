@@ -83,4 +83,7 @@ span {
   border: 1px solid #fff;
   padding: 10px;
   margin: 5px;
+  width: 10rem;
+  height: 1rem;
+  text-align: center;
 }
