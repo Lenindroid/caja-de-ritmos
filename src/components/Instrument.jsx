@@ -1,8 +1,10 @@
 import React from 'react'
 
-function Instrument() {
+function Instrument({ children }) {
   return (
-    <button className="pad"></button>
+    <button className="drum-pad">
+      {children}
+    </button>
   )
 }
 

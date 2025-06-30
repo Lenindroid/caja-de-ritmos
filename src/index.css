@@ -30,20 +30,23 @@ html, body, #root {
   justify-items: center;
 }
 
-.pad {
+.drum-pad {
   background-color: #00A1EC;
   width: 9em;
   height: 9em;
   border: none;
   padding: 0;
   cursor: pointer;
+  color: #fff;
+  font-weight: bold;
+  font-size: 0.9rem;
 }
 
-.pad:hover {
+.drum-pad:hover {
   background-color: #0174aa;
 }
 
-.pad:active {
+.drum-pad:active {
   background-color: #0037EC;
 }
 

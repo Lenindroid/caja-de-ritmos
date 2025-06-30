@@ -4,15 +4,15 @@ import Instrument from './Instrument'
 function InstrumentsGrid() {
   return (
     <div className="pad-grid">
-      <Instrument />
-      <Instrument />
-      <Instrument />
-      <Instrument />
-      <Instrument />
-      <Instrument />
-      <Instrument />
-      <Instrument />
-      <Instrument />
+      <Instrument>Q</Instrument>
+      <Instrument>w</Instrument>
+      <Instrument>E</Instrument>
+      <Instrument>A</Instrument>
+      <Instrument>S</Instrument>
+      <Instrument>D</Instrument>
+      <Instrument>Z</Instrument>
+      <Instrument>X</Instrument>
+      <Instrument>C</Instrument>
     </div>
   )
 }
