@@ -72,11 +72,12 @@ html, body, #root {
 
 input[type="range"] {
   height: 30%;
+  background-color: transparent;
 }
 
 input[type="range"]::-webkit-slider-runnable-track, input[type="range"]::-moz-range-track {
   height: 90%;
-  background: #00A1EC;
+  background-color: #00A1EC;
 }
 
 span {

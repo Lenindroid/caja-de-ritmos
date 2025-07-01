@@ -1,12 +1,13 @@
 import React, { useEffect, useRef } from 'react'
 
-function Instrument({ children, id, src, description, setInstrument }) {
+function Instrument({ children, id, src, description, setInstrument, currentVolume }) {
   const audioRef = useRef(null);
   const buttonRef = useRef(null);
 
   function playInstrument() {
     if(audioRef.current) {
       audioRef.current.currentTime = 0;
+      audioRef.current.volume = currentVolume;
       audioRef.current.play();
       setInstrument(description);
     }

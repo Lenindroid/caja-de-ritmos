@@ -4,10 +4,11 @@ import SideElements from './SideElements'
 
 function DrumMachine() {
   const [currentInstrument, setInstrument] = useState('');
+  const [currentVolume, setVolume] = useState(1);
   return (
     <div className="caja-de-ritmos" id="drum-machine">
-      <InstrumentsGrid setInstrument={setInstrument}/>
-      <SideElements instrument={currentInstrument}/>
+      <InstrumentsGrid setInstrument={setInstrument} currentVolume={currentVolume}/>
+      <SideElements instrument={currentInstrument} setVolume={setVolume}/>
     </div>
   )
 }
