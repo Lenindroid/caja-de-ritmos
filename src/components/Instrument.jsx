@@ -1,13 +1,14 @@
 import React, { useEffect, useRef } from 'react'
 
-function Instrument({ children, id, src, description, setInstrument, currentVolume }) {
+function Instrument({ children, id, src, description, setInstrument, currentVolume, power }) {
   const audioRef = useRef(null);
   const buttonRef = useRef(null);
 
   function playInstrument() {
     if(audioRef.current) {
       audioRef.current.currentTime = 0;
-      audioRef.current.volume = currentVolume;
+      if (power) audioRef.current.volume = currentVolume;
+      else audioRef.current.volume = 0;
       audioRef.current.play();
       setInstrument(description);
     }
@@ -34,7 +35,7 @@ function Instrument({ children, id, src, description, setInstrument, currentVolu
       window.removeEventListener('keydown', handleKeyPress);
       window.removeEventListener('keyup', handleKeyUnpress);
     };
-  }, [children]);
+  }, [children, power, currentVolume]);
 
   return (
     <button className="drum-pad" id={id} onClick={playInstrument} ref={buttonRef}>
