@@ -4,8 +4,8 @@ import Instrument from './Instrument'
 function InstrumentsGrid({setInstrument, currentVolume, power}) {
   return (
     <div className="pad-grid">
-      <Instrument id="piano-key" src="/sounds/piano.mp3" description="Piano" setInstrument={setInstrument} currentVolume={currentVolume} power={power}>Q</Instrument>
-      <Instrument id="guitar" src="/sounds/guitar.mp3" description="Guitar" setInstrument={setInstrument} currentVolume={currentVolume} power={power}>W</Instrument>
+      <Instrument id="piano-key" src="sounds/piano.mp3" description="Piano" setInstrument={setInstrument} currentVolume={currentVolume} power={power}>Q</Instrument>
+      <Instrument id="guitar" src="sounds/guitar.mp3" description="Guitar" setInstrument={setInstrument} currentVolume={currentVolume} power={power}>W</Instrument>
       <Instrument id="heater-1" src="https://cdn.freecodecamp.org/testable-projects-fcc/audio/Heater-1.mp3" description="Heater 1" setInstrument={setInstrument} currentVolume={currentVolume} power={power}>E</Instrument>
       <Instrument id="heater-2" src="https://cdn.freecodecamp.org/testable-projects-fcc/audio/Heater-2.mp3" description="Heater 2" setInstrument={setInstrument} currentVolume={currentVolume} power={power}>A</Instrument>
       <Instrument id="heater-3" src="https://cdn.freecodecamp.org/testable-projects-fcc/audio/Heater-3.mp3" description="Heater 3" setInstrument={setInstrument} currentVolume={currentVolume} power={power}>S</Instrument>
